@@ -4,6 +4,12 @@ import data from '../data/courses.json'
 
 export type Status = 'INACTIVE' | 'ACTIVE' | 'CANCELLED'
 
+const statusMap: { [key: string]: Status} = {
+    'inactive':'INACTIVE',
+    'active': 'ACTIVE',
+    'cancelled': 'CANCELLED'
+}
+
 /**
  * Model class representing a Banner course.
  */
@@ -36,7 +42,7 @@ export default class Course {
         course.creditHours = d.creditHours
         course.crn = d.crn
         course.title = d.title
-        course.status = 'INACTIVE'
+        course.status = d.status in statusMap ? statusMap[d.status] : course.status;
         return course
       })
   }
