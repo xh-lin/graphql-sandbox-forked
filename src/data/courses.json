@@ -26,5 +26,40 @@
     "status": "cancelled",
     "termCode": 202301,
     "title": "Introduction to Artificial Intelligence"
+  },
+  {
+    "creditHours": 4,
+    "crn": 16123,
+    "status": "inactive",
+    "termCode": 202301,
+    "title": "Computer Games Programming"
+  },
+  {
+    "creditHours": 4,
+    "crn": 16124,
+    "status": "active",
+    "termCode": 202401,
+    "title": "Mobile Applications"
+  },
+  {
+    "creditHours": 4,
+    "crn": 16125,
+    "status": "active",
+    "termCode": 202401,
+    "title": "Computer Graphics"
+  },
+  {
+    "creditHours": 4,
+    "crn": 16126,
+    "status": "inactive",
+    "termCode": 202401,
+    "title": "Operating Systems"
+  },
+  {
+    "creditHours": 4,
+    "crn": 16127,
+    "status": "cancelled",
+    "termCode": 202401,
+    "title": "Compilers"
   }
 ]

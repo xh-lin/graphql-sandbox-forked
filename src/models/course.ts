@@ -33,7 +33,7 @@ export default class Course {
   static get(termCode: number) {
     return data
       .filter((d) => {
-        return d.termCode === termCode
+        return d.termCode === termCode &&  (d.status === 'active')
       })
       .map((d) => {
         const course = new Course()
@@ -42,7 +42,7 @@ export default class Course {
         course.creditHours = d.creditHours
         course.crn = d.crn
         course.title = d.title
-        course.status = d.status in statusMap ? statusMap[d.status] : course.status;
+        course.status = d.status in statusMap ? statusMap[d.status] : course.status
         return course
       })
   }
