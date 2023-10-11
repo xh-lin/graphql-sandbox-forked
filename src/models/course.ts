@@ -32,7 +32,7 @@ export default class Course {
     this.status = 'INACTIVE'
   }
 
-  static get(termCode: number) {
+  static get(termCode: number, reqFields: string[]) {
     return data
       .filter((d) => {
         return d.termCode === termCode && d.status === 'active'
@@ -45,7 +45,7 @@ export default class Course {
         course.crn = d.crn
         course.title = d.title
         course.status = d.status in statusMap ? statusMap[d.status] : course.status
-        course.faculty = Faculty.get(d.termCode, d.crn)
+        course.faculty = reqFields.includes('faculty') ? Faculty.get(d.termCode, d.crn) : null
         return course
       })
   }

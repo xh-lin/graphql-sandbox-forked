@@ -2,9 +2,10 @@ import Course from "../models/course"
 
 const resolvers = {
   Query: {
-    courses: (_, args) => {
-      const courses: Array<Course> = Course.get(args.termCode)
-      return courses
+    courses: (_parent, args, _context, info) => {
+        const reqFields = info.fieldNodes[0].selectionSet.selections.map(selection => selection.name.value);
+        const courses: Array<Course> = Course.get(args.termCode, reqFields)
+        return courses
     },
   },
 }

@@ -29,6 +29,7 @@ export default class Faculty {
                 faculty.isPrimaryFaculty = d.isPrimaryFaculty
                 return faculty
             })
+        console.log(`Faculty get() - termCode: ${termCode}, crn: ${crn}, result: ${result}`)
         return result.length > 0 ? result[0] : null
     }
 }
