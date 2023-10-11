@@ -1,6 +1,7 @@
 'use strict'
 import { globalIdField } from 'graphql-relay'
 import data from '../data/courses.json'
+import Faculty from './faculty'
 
 export type Status = 'INACTIVE' | 'ACTIVE' | 'CANCELLED'
 
@@ -20,6 +21,7 @@ export default class Course {
   status: Status | null
   termCode: number | null
   title: string | null
+  faculty: Faculty | null
 
   constructor() {
     this.id = null
@@ -33,7 +35,7 @@ export default class Course {
   static get(termCode: number) {
     return data
       .filter((d) => {
-        return d.termCode === termCode &&  (d.status === 'active')
+        return d.termCode === termCode && d.status === 'active'
       })
       .map((d) => {
         const course = new Course()
@@ -43,6 +45,7 @@ export default class Course {
         course.crn = d.crn
         course.title = d.title
         course.status = d.status in statusMap ? statusMap[d.status] : course.status
+        course.faculty = Faculty.get(d.termCode, d.crn)
         return course
       })
   }
