@@ -1,0 +1,47 @@
+[
+  {
+    "crn": 16998,
+    "termCode": 202301,
+    "firstname": "David",
+    "lastname": "Malan",
+    "position": "Gordon McKay Professor of the Practice of Computer Science",
+    "organization": "Harvard University",
+    "isPrimaryFaculty": true
+  },
+  {
+    "crn": 16768,
+    "termCode": 202301,
+    "firstname": "Stephen",
+    "lastname": "Elston",
+    "position": "Visiting Associate Professor of Information Technologies",
+    "organization": "Massachusetts Institute of Technology",
+    "isPrimaryFaculty": true
+  },
+  {
+    "crn": 16694,
+    "termCode": 202301,
+    "firstname": "Eric",
+    "lastname": "Gieseke",
+    "position": "Chief Executive Officer and Founder",
+    "organization": "Pago Capital",
+    "isPrimaryFaculty": true
+  },
+  {
+    "crn": 16694,
+    "termCode": 202301,
+    "firstname": "Anindita",
+    "lastname": "Mahapatra",
+    "position": "Solutions Architect",
+    "organization": "Databricks",
+    "isPrimaryFaculty": false
+  },
+  {
+    "crn": 16439,
+    "termCode": 202301,
+    "firstname": "Brian",
+    "lastname": "Subirana",
+    "position": "Principal Consultant",
+    "organization": "Quantia Analytics LLC",
+    "isPrimaryFaculty": true
+  }
+]

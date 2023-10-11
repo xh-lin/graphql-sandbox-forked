@@ -1,0 +1,23 @@
+[
+    {
+        "creditHours": 4,
+        "crn": 16998,
+        "status": "active",
+        "termCode": 202301,
+        "title": "Computer Science for Business Professionals"
+    },
+    {
+        "creditHours": 4,
+        "crn": 16768,
+        "status": "active",
+        "termCode": 202301,
+        "title": "Fundamentals of Data Science"
+    },
+    {
+        "creditHours": 4,
+        "crn": 16439,
+        "status": "cancelled",
+        "termCode": 202301,
+        "title": "Introduction to Artificial Intelligence"
+    }
+]

@@ -1,0 +1,1 @@
+{"version":3,"file":"course.js","sourceRoot":"","sources":["../../src/resolvers/course.ts"],"names":[],"mappings":";;;;;AAAA,8DAAqC;AAErC,MAAM,SAAS,GAAG;IAChB,KAAK,EAAE;QACL,OAAO,EAAE,CAAC,CAAC,EAAE,IAAI,EAAE,EAAE;YACnB,MAAM,OAAO,GAAkB,gBAAM,CAAC,GAAG,CAAC,IAAI,CAAC,QAAQ,CAAC,CAAA;YACxD,OAAO,OAAO,CAAA;QAChB,CAAC;KACF;CACF,CAAA;AAED,kBAAe,SAAS,CAAA"}

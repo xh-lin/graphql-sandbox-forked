@@ -1,0 +1,33 @@
+{
+  "name": "apollo-server-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "type": "",
+  "scripts": {
+    "compile-start": "tsc --build tsconfig.json && node --enable-source-maps ./dist/index.js",
+    "start": "nodemon --watch src --ext graphql,ts,js --exec \"npm run compile-start\""
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "@apollo/server": "4.x",
+    "@graphql-tools/load-files": "~6.6.1",
+    "@graphql-tools/merge": "~8.3.18",
+    "@graphql-tools/schema": "^9.0.4",
+    "@graphql-tools/utils": "^8.12.0",
+    "apollo-server-express": "^3.10.3",
+    "graphql": "16.x",
+    "graphql-relay": "0.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "nodemon": "2.x",
+    "ts-node": "10.x",
+    "tsc-watch": "^5.0.3",
+    "typescript": "4.x"
+  },
+  "keywords": []
+}
