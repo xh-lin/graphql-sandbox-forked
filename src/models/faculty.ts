@@ -15,7 +15,7 @@ export default class Faculty {
         this.isPrimaryFaculty = null
     }
 
-    static get(termCode: number, crn: number) {
+    static get(termCode: number, crn: number): Faculty[] {
         const result = data
             .filter((d) => {
                 return d.termCode === termCode && d.crn === crn
@@ -30,6 +30,6 @@ export default class Faculty {
                 return faculty
             })
         console.log(`Faculty get() - termCode: ${termCode}, crn: ${crn}, result: ${result}`)
-        return result.length > 0 ? result[0] : null
+        return result
     }
 }

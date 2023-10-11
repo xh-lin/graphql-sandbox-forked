@@ -42,7 +42,7 @@ const typeDefs = gql`
     """
     Faculty of this course.
     """
-    faculty: Faculty
+    faculty: [Faculty]
   }
 
   type Faculty {

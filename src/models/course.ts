@@ -21,7 +21,7 @@ export default class Course {
   status: Status | null
   termCode: number | null
   title: string | null
-  faculty: Faculty | null
+  faculty: Faculty[] | null
 
   constructor() {
     this.id = null
@@ -32,7 +32,7 @@ export default class Course {
     this.status = 'INACTIVE'
   }
 
-  static get(termCode: number, reqFields: string[]) {
+  static get(termCode: number, reqFields: string[]): Course[] {
     return data
       .filter((d) => {
         return d.termCode === termCode && d.status === 'active'
@@ -45,7 +45,7 @@ export default class Course {
         course.crn = d.crn
         course.title = d.title
         course.status = d.status in statusMap ? statusMap[d.status] : course.status
-        course.faculty = reqFields.includes('faculty') ? Faculty.get(d.termCode, d.crn) : null
+        course.faculty = reqFields.includes('faculty') ? Faculty.get(d.termCode, d.crn) : course.faculty
         return course
       })
   }
