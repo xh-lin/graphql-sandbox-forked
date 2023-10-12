@@ -43,5 +43,14 @@
     "position": "Principal Consultant",
     "organization": "Quantia Analytics LLC",
     "isPrimaryFaculty": true
+  },
+  {
+    "crn": 16125,
+    "termCode": 202401,
+    "firstname": "Brian",
+    "lastname": "Subirana",
+    "position": "Principal Consultant",
+    "organization": "Quantia Analytics LLC",
+    "isPrimaryFaculty": true
   }
 ]

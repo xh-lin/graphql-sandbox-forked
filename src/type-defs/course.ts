@@ -38,6 +38,38 @@ const typeDefs = gql`
     Title of this course.
     """
     title: String!
+
+    """
+    Faculty of this course.
+    """
+    faculty: [Faculty]
+  }
+
+  type Faculty {
+    """
+    First name of this faculty.
+    """
+    firstname: String!
+
+    """
+    Last name of this faculty.
+    """
+    lastname: String!
+
+    """
+    Position of this faculty.
+    """
+    position: String!
+
+    """
+    Organization of this faculty.
+    """
+    organization: String!
+
+    """
+    Whether or not this is the primary faculty of the course.
+    """
+    isPrimaryFaculty: Boolean!
   }
 
   type Query {
