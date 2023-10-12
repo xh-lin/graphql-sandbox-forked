@@ -1,5 +1,5 @@
-'use strict'
-import { globalIdField } from 'graphql-relay'
+"use strict";
+// import { globalIdField } from 'graphql-relay'
 import data from '../data/courses.json'
 import Faculty from './faculty'
 
@@ -45,6 +45,7 @@ export default class Course {
         course.crn = d.crn
         course.title = d.title
         course.status = d.status in statusMap ? statusMap[d.status] : course.status
+        // optimization: don't query faculties when this field is not requested
         course.faculty = reqFields.includes('faculty') ? Faculty.get(d.termCode, d.crn) : course.faculty
         return course
       })

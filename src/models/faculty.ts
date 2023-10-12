@@ -1,3 +1,4 @@
+"use strict";
 import data from '../data/faculty.json'
 
 export default class Faculty {
